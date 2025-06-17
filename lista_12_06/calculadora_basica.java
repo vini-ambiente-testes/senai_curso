@@ -3,7 +3,7 @@ Exercício 1: Calculadora Básica
 Crie um programa que receba dois números do usuário e permita realizar as 4 operações básicas (+, -, *, /) conforme a escolha do usuário.
 */
 import java.util.Scanner;
-public class calculadora_basic{
+public class calculadora_basica{
   public static void numeros(double primeiro, double segundo, String simbolo){
     double operacao=0;
     switch (simbolo) {
@@ -25,7 +25,7 @@ public class calculadora_basic{
       break;
       default:
         System.out.println("Você digitou errado algum desses valores");
-      };
+    };
   };  
   public static void main(String[] args) {
     Scanner leitura = new Scanner(System.in);
