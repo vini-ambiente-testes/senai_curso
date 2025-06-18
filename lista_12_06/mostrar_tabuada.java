@@ -16,8 +16,9 @@ public class mostrar_tabuada{
   public static void main(String[] args) {
     Scanner leitura = new Scanner(System.in);
     System.out.println("Tabuada Básica");
-    System.out.println("Digite o número para ver tabuada: ");
+    System.out.print("Digite o número para ver tabuada: ");
     int numero=leitura.nextInt();
+    System.out.println("\nTabuada do " + numero + ":\n");
     leitura.close();
     numeros(numero);  
   }
