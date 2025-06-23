@@ -6,20 +6,16 @@ adivinhar.
 import java.util.Scanner;
 import java.util.Random;
 public class jogo_adivinhacao{
-  public static void processamento(int [] lista_binaria, int randomNumber){
-    System.out.println(randomNumber);
-    for(int indice: lista_binaria){
-      System.out.println(indice);
-    }
-  }
-  public static void valores(int randomNumber){
-    int[] lista_binaria=new int[99];
-    processamento(lista_binaria,randomNumber);
+  public static  int processamento(int randomNumber){
+    int meio=randomNumber/2;
+    int fim=randomNumber;
+    int inicio=0;
+    meio = inicio + (fim - inicio) / 2;
   }
   public static void gerador(){
     Random random = new Random();
     int randomNumber = random.nextInt(100);
-    valores(randomNumber);
+    processamento(randomNumber);
   }
   public static void main(String[] args) {
     System.out.println("Jogo de adivinhação");
