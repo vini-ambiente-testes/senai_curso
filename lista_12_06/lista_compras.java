@@ -5,34 +5,35 @@ Crie um programa que permita ao usuário adicionar itens a uma lista de compras 
 import java.util.Scanner;
 import java.util.ArrayList;
 public class lista_compras{
-  public static void adicao_items(String lista[]){
-    
-    for (String i : lista) {
-      System.out.println(i);
+  public static void mostrarCompras(String itemAdicionado){
+    ArrayList<String> compras = new ArrayList<String>();
+    compras.add(itemAdicionado);
+    for(String indice: compras){
+      System.out.println(indice);
     }
   }
-  public static void verificar(int contador){
+  public static String adicionar(){
     Scanner leitura = new Scanner(System.in);
-    int limite=contador;
-    String item="";
-    int index=1;
-    String[] lista = new String[contador];
-    
-    while(contador<=limite && contador>0){
-      contador=contador-1;
-      
-      System.out.println("Digite o item "+index+" para adicionar a lista de compras: ");
-      index=index+1;
-      item=leitura.next();
-      lista[index+1]=item;
-    }
-    adicao_items(lista);
+    System.out.println("Digite o item? ");
+    String itemAdicionado= leitura.next();
+    mostrarCompras(itemAdicionado);
+  }
+  public static void processamento(int resposta){
+
+    if(resposta==1){
+      adicionar();
+    };
+    if(resposta==2){
+      mostrarCompras();
+    };
+
+
   }
   public static void main(String[] args) {
     Scanner leitura = new Scanner(System.in);
     System.out.println("Lista de Compras");
-    System.out.println("Defina o número de itens que deve ter na lista: ");
-    int contador=leitura.nextInt();
-    verificar(contador);
+    System.out.println("Digite:\n1º para adicionar um item;\n2º para ver o carrinho;\n3º para excluir um item;\n4º para excluir o carrinho;");
+    int respostaUsuario= leitura.nextInt();
+    processamento(respostaUsuario);
   }
 }
