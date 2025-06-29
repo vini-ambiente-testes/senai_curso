@@ -5,29 +5,28 @@ Crie um programa que permita ao usuário adicionar itens a uma lista de compras 
 import java.util.Scanner;
 import java.util.ArrayList;
 public class lista_compras{
-  public static void mostrarCompras(String itemAdicionado){
-    ArrayList<String> compras = new ArrayList<String>();
-    compras.add(itemAdicionado);
+  public static void mostrarCompras(){
     for(String indice: compras){
       System.out.println(indice);
     }
   }
-  public static String adicionar(){
+  public static void criar_lista(String itemAdicionado){
+    ArrayList<String> compras = new ArrayList<String>();
+    compras.add(itemAdicionado);
+  }
+  public static void adicionar(){
     Scanner leitura = new Scanner(System.in);
     System.out.println("Digite o item? ");
     String itemAdicionado= leitura.next();
-    mostrarCompras(itemAdicionado);
+    criar_lista(itemAdicionado);
   }
   public static void processamento(int resposta){
-
     if(resposta==1){
       adicionar();
     };
     if(resposta==2){
       mostrarCompras();
     };
-
-
   }
   public static void main(String[] args) {
     Scanner leitura = new Scanner(System.in);
