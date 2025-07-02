@@ -21,11 +21,15 @@ public class calculadora_basica{
       break;
       case "/":
         operacao=primeiro/segundo;
-        System.out.println("A Subtração dos números é: "+operacao);
-      break;
-      default:
-        System.out.println("Você digitou errado algum desses valores");
-    };
+        double resto=primeiro%segundo;
+        if(resto==0){
+          System.out.println("A Divisão dos números é: "+operacao);
+        }else{
+          System.out.println("Invalido: divisão por zero");
+          break;
+        }
+        break;
+    }
   };  
   public static void main(String[] args) {
     Scanner leitura = new Scanner(System.in);

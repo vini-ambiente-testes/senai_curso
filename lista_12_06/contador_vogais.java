@@ -6,8 +6,7 @@ import java.util.Scanner;
 public class contador_vogais{
   public static void  processamento(String palavra){
     char[] lista_letras=palavra.toCharArray();
-    String vogais="aeiou";
-    char[] lista_vogais=vogais.toCharArray();
+    char[] lista_vogais={'a', 'e','i','o','u'};
     int resultado=0;
     for(char vogal: lista_vogais){
       for(char letra: lista_letras){

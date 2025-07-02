@@ -14,7 +14,7 @@ public class jogo_adivinhacao{
     Scanner leitura = new Scanner(System.in);
     System.out.println("Digite o palpite : ");
     int palpite=leitura.nextInt();
-    while(palpite===randomNumber){
+    while(palpite==randomNumber){
       if(fim>randomNumber){
         fim=fim-1;
         System.out.println(fim);
