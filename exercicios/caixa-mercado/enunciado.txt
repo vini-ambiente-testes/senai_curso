@@ -1,0 +1,39 @@
+🧾 Atividade Prática – Sistema de Caixa de Mercado em Java
+
+🎯 Objetivo:
+
+Criar um sistema simples de caixa de supermercado utilizando a linguagem Java, com foco no uso de estrutura condicional (if/else), estrutura de repetição (while), entrada de dados com Scanner, e manipulação de variáveis.
+
+🧠 Descrição da Atividade:
+
+Você foi contratado para desenvolver um sistema básico de caixa de mercado, onde o operador de caixa poderá:
+
+1. Cadastrar produtos informando nome e preço.
+2. Visualizar o total da compra.
+3. Finalizar a compra, informando o valor pago pelo cliente.
+4. Calcular o troco, caso o valor recebido seja maior que o valor da compra.
+5. Reiniciar a compra automaticamente após finalização.
+6. Encerrar o sistema quando o usuário desejar.
+
+📌 Requisitos obrigatórios:
+
+O programa deve exibir um menu com 3 opções:
+1. Adicionar produto
+2. Finalizar compra
+3. Sair do sistema
+
+Sempre que a opção 1 for escolhida:
+Solicitar o nome do produto.
+Solicitar o preço do produto.
+Somar o valor ao total da compra.
+
+Exibir uma mensagem com o total atualizado.
+
+Se a opção 2 for escolhida:
+Mostrar o valor total.
+Solicitar o valor recebido pelo cliente.
+Verificar se o valor é suficiente.
+Se não for, mostrar quanto falta pagar.
+Se for suficiente, exibir o troco e zerar o total para iniciar nova compra.
+
+A opção 3 deve encerrar o sistema com uma mensagem de despedida.
