@@ -1,0 +1,26 @@
+package com.caixa_mercado;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+class produto{
+  String nome;
+  double preco;
+  
+  p(){
+    
+  }
+
+}
+
+public class lista_produtos {
+  public static void main(String[] args) {
+    Scanner leitura = new Scanner(System.in);
+    ArrayList<Pessoa> listaDePessoas = new ArrayList<>();
+    System.out.println("Me fale o nome do item?");
+    produto meuProduto= new produto();
+    meuProduto.nome = leitura.next();
+    System.out.println("Me fale o preço do item?");
+    meuProduto.preco = leitura.nextDouble();
+  }
+
+}
