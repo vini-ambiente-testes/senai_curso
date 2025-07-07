@@ -3,11 +3,11 @@ package com.caixa_mercado;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-class Produtos{
+class Produto{
     String nome;
     double preco;
 
-    Produtos(String nome, double preco) {
+    Produto(String nome, double preco) {
         this.nome = nome;
         this.preco = preco;
     }
@@ -17,16 +17,16 @@ class Produtos{
 
 }
 
-public class Produto {
+public class Produtos {
     public static void main(String[] args) {
         Scanner leitura = new Scanner(System.in);
-        ArrayList<Produtos> listaProdutos = new ArrayList<>();
+        ArrayList<Produto> listaProdutos = new ArrayList<>();
         System.out.println("Me fale o nome do item?");
         String nome=leitura.next();
         System.out.println("Me fale o preço do item?");
         double preco = leitura.nextDouble();
-        listaProdutos.add(new Produtos(nome, preco));
-        for (Produtos p : listaProdutos) {
+        listaProdutos.add(new Produto(nome, preco));
+        for (Produto p : listaProdutos) {
             p.apresentar();
         }
     }
